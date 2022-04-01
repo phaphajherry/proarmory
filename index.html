@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Pro Armory</title>
+  </head>
+  <body>
+    <section  class="section1">
+        <div class="container">
+            <div class="text-center">
+                <img src="img/ProArmory_LongLogo.png" alt="logo" width="350" height="auto">
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <iframe width="753" height="408" src="https://www.youtube.com/embed/h49hx070PNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+                <div class="col-md-6 col-sm-12 timerpart">
+                    <div class="text-center">
+                        <h3 style="font-weight: bold;">“BRINGING YOU ALL OF YOUR FAVORITE AMMUNITION FOR ALL OF YOUR FAVORITE GUNS.”</h3>
+                        <h3 style="font-weight: bold;">LIVE ON APRIL 15TH</h3>
+                        <div id="timer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <center>
+                        <div class="text text-center">
+                            <p> SHT </p>
+                        </div>
+                        <img src="img/shoot for pro armory-21.png" width="450" height="300px"> 
+                        <p>SH*T! BY SIGNING UP I GET A FREE BOX OF 9MM BRASS?</p> 
+                    </center>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <center>
+                        <div class="text text-center">
+                            <p> SHOWER </p>
+                            
+                        </div>
+                        <img src="img/IMG_2559.jpg" width="450" height="300px">
+                        <p>IT'S ABOUT TIME YOU SHOWERED OFF ALL YOUR SINS!</p> 
+                    </center>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <center>
+                        <div class="text text-center">
+                            <p> SHOOT </p>
+                        </div>
+                        <img src="img/shoot for pro armory-17.png" width="450" height="300px"> 
+                        <p>SHOOT ALL OF YOUR FAVORITE AMMO WHEN YOU SHOP AT PRO ARMORY!</p> 
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section4"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <h6>Sign Up for your free <b>Proarmory</b> account today!</h6>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <h6>THE FIRST 500 PEOPLE WILL RECEIVE A FREE BOX OF 9MM BRASS. <i>*Sent out with your first order</i> </h6>
+                    <span></span>
+                </div>
+                <div class="col-md-4col-sm-12 last">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12">
+                            <input type="email" name="" id="" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-danger"> Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>2022 Copyright, entire contents by PA, Inc.</p>
+                </div>
+                <div class="col-md-7">
+                    <p>ProArmory and the ProArmory symbol are registered trademarks of Direct Investments LTD.</p>
+                </div>
+                <div class="col-md-2">
+                    <p>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Display the countdown timer in an element -->
+
+
+     <script type="text/javascript">
+        function updateTimer() {
+            future = Date.parse("April 11, 2022 11:57:00");
+            now = new Date();
+            diff = future - now;
+        
+            days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            hours = Math.floor(diff / (1000 * 60 * 60));
+            mins = Math.floor(diff / (1000 * 60));
+            secs = Math.floor(diff / 1000);
+        
+            d = days;
+            h = hours - days * 24;
+            m = mins - hours * 60;
+            s = secs - mins * 60;
+        
+            document.getElementById("timer")
+                .innerHTML =
+                '<div>' + d + '<span>Days</span></div>' +
+                '<div>' + h + '<span>Hours</span></div>' +
+                '<div>' + m + '<span>Minutes</span></div>' +
+                '<div>' + s + '<span>Seconds</span></div>';
+        }
+        setInterval('updateTimer()', 1000);
+        </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
